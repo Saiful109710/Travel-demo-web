@@ -61,14 +61,17 @@ li{
 }
 
 .nav-options p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: normal;
+    color: rgb(66, 66, 71);
 }
 
 .nav-options p:nth-child(1){
     font-weight: 700;
 }
+
+
 
 /* banner */
 
@@ -85,6 +88,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .explore-container h3{
@@ -168,7 +172,8 @@ input,select{
     display: flex;
     flex-direction: column;
     
-    gap: 1rem;
+    gap:10px;
+   
 
  } 
 
@@ -185,15 +190,21 @@ input,select{
 .text-content h3{
     text-align: left;
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
-.image{
-    border: 1px solid red;
-    
-}
+
 
 /* Your destination */
-
+.your-destination h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+.your-destination p{
+    text-align: center;
+    line-height: 26px;
+    margin: 24px auto 48px;
+    max-width: 600px;
+}
 .row-1,
 .row-2,
 .row-3{
@@ -202,6 +213,18 @@ input,select{
     margin: 1rem 0;
     gap: 1rem;
 }
+
+.home{
+    color: rgb(67, 44, 170);
+}
+.map{
+    color: rgb(54, 137, 111);
+}
+
+.discount{
+    color: red;
+}
+
 
 .row-2{
     grid-template-columns: 0.8fr 1.5fr 0.7fr;
@@ -236,6 +259,11 @@ input,select{
 .footer-section{
     background: rgba(19, 19, 24, 0.05);
     padding: 2rem 0;
+  
+}
+
+.footer-desc{
+    text-align: center;
 }
 
 .footer-section .logo{
@@ -263,7 +291,276 @@ input,select{
     display: none;
 }
 
+/* feature */
+.section-heading{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.section-heading h3{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.section-heading p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.feature-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+
+.feature-card{
+    background-color: rgba(251, 181, 99, 0.05);
+    border:1px solid rgba(251, 181, 99, 0.2);
+    padding: 50px 32px;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+   
+    
+}
+
+.feature-card h4,p{
+    text-align: left;
+    
+}
+
+.feature-card h4{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.feature-card i{
+    font-size: 40px;
+}
+
+.feature-card-row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.feature-card-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.feature-card-row2 .feature-card{
+    width: 50%;
+}
+
+.feature-card:nth-child(2){
+    background-color: rgba(41, 206, 246, 0.05);
+}
+
+.feature-card-row2 .feature-card{
+    background-color:rgba(233, 68, 68, 0.05)
+}
+
+
+.deals-container .deal-item{
+    background-image: url(../Images/deal-image1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+.deals-container .deal-item{
+    padding: 55px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.deal-item .deal-content{
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 70px 120px 70px 50px;
+    border-radius: 16px;
+}
+
+.deal-icon{
+    display: flex;
+    gap: 24px;
+}
+
+.deal-icon i{
+    color: orangered;
+    font-size: 25px;
+    margin-right: 5px;
+
+}
+
+.deal-item h4{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.deal-item p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    ;
+}
+
+.price-text{
+    color: orangered;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.btn-primary{
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.deal-item:nth-child(2){
+    background-image: url(../Images/deal-image2.png);
+    margin: 24px 0;
+    justify-content: flex-start;
+    
+}
+
+.our-deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+
+
+.travel{
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+}
+
+.travel .travel-vedio iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.travel-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    max-width: 450px;
+    line-height: 60px;
+    margin-top: 0px;
+}
+
+.travel-content p{
+    color: rgb(90, 90, 93);
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.travel-content li{
+    text-align: left;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 16px;
+
+}
+
+.travel-content button{
+    margin-top: 34px;
+}
+
+
+.newsletter{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 24px;
+    
+}
+
+.newsletter-form{
+    border: 1px solid rgb(255, 84, 0);
+    border-radius: 16px;
+    padding: 48px;
+    
+}
+
+.newsletter-form h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.newsletter-form p{
+    
+    padding-right: 60px;
+    font-size: 18px;
+
+}
+
+.newsletter-form hr{
+    margin: 35px 0;
+}
+
+.newsletter-form input{
+    
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    padding: 0;
+    height: 70px;
+    text-align: center;
+    
+}
+
+
+
+
+
+.newsletter-btn{
+    width: 100%;
+    height: 70px;
+    
+ 
+}
+
+.newsletter-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.fotter-text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
 /* rasponsive */
+
 
 @media  screen and (max-width:576px) {
     .nav-options{
@@ -310,7 +607,11 @@ input,select{
         width: 100%;
         margin:1rem 0;
     }
+    .popular-section{
+        margin-bottom: 50px;
+    }
 
+    
     .popular-section,.row-1,.row-2,.row-3{
         grid-template-columns: 1fr;
     }
@@ -318,5 +619,71 @@ input,select{
     .explore-your-travel{
         padding: 1rem;
     }
+
+    .feature-card-row1{
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card-row2 .feature-card{
+        width: 100%;
+        
+    }
+.deal-item{
+    padding: 10px
+}
+    .deal-item .deal-content {
+        width: 100%;
+     
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .deal-content p{
+        text-align: center;
+    }
+
+    .deal-icon{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .travel{
+        grid-template-columns: 1fr;
+    }
+
+    .travel-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .travel-content h1{
+        text-align: center;
+    }
+
+    .travel-vedio{
+        height: 400px;
+    }
+
+    .newsletter{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .newsletter-form p{
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+    
     
 }
