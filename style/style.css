@@ -10,7 +10,7 @@ body{
 
 .container{
     width: 90%;
-    margin: 5rem auto;
+    margin: 0 auto;
     border-radius: 1rem;
 }
 
@@ -375,6 +375,7 @@ input,select{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 12px;
     
 
 }
@@ -441,6 +442,7 @@ input,select{
     margin: 24px 0;
     justify-content: flex-start;
     
+    
 }
 
 .our-deals{
@@ -494,6 +496,7 @@ input,select{
 
 
 .newsletter{
+    margin-top:80px;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 24px;
